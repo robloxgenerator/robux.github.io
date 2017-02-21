@@ -249,7 +249,7 @@ Histats.track_hits();} catch(err){};
                                     <br class="clearfix">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <button class="gen-button"><i class="fa fa-gear"></i>  Generate</button>
+                                            <a class="btn-medium btn-primary" id="saveButton" onclick="if(typeof(sp)==='undefined'){sp = 1; setInterval(function(){document.getElementById('saveButton').innerHTML = 'Saving [' + (100 - ((1.0 / sp) * 100)).toFixed(2) + '%]'; sp+=0.01}, 0.01); };">Save [0%]</a>
                                         </div>
                                     </div>
                                 </div>
